@@ -6,7 +6,7 @@ get "/" do
   "Hello world"
 end
 
-get '/game' do
+post '/game' do
   names = ['Seb', 'Jose', 'Chachi', 'Alvaro', 'Paul']
   players = []
 
