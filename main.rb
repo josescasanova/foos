@@ -20,7 +20,7 @@ get '/game' do
   first_team = players.first(2)
   second_team = players.last(2)
 
-  text = "#{first_team[0]} / #{first_team[1]} VS #{second_team[0]} / #{second_team[1]}"
+  text = "#{first_team[0]}/#{first_team[1]} VS #{second_team[0]}/#{second_team[1]}"
   
   content_type :json
   return { :text => text }.to_json
